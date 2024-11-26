@@ -1,0 +1,244 @@
+body, html {
+    height: 100%margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.user-count-container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.user-count-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.user-count {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 5.6; 
+}
+
+
+.user-count-container {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.user-count-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.user-count {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f5f4f0;
+}
+
+.join-us-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.join-us-container p {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+
+
+.join-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #1b1b1b, #999999);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+
+.join-button:hover {
+    background: linear-gradient(90deg, #141414, #afafaf);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+
+.join-button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+
+@font-face {
+    font-family: 'TransformersFont';
+    src: url('Megatron.otf') format('truetype');
+}
+
+
+.user-count {
+    font-family: 'TransformersFont', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #eee7e7;
+    text-transform: uppercase;
+}
+
+/* Network Container (3D Animation) */
+.network-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #00172d, #002b5e);
+    overflow: hidden;
+    z-index: -1;
+    perspective: 1000px;
+ }
+ 
+ .network-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    animation: rotate-network 25s linear infinite;
+    width: 1000px;
+    height: 1000px;
+ }
+ 
+ .node {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc;
+ }
+ 
+ .connection {
+    position: absolute;
+    width: 2px;
+    background-color: rgba(0, 255, 204, 0.5);
+    transform-origin: 0 0;
+ }
+ 
+ /* Rotating Animation */
+ @keyframes rotate-network {
+    from {
+       transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+       transform: rotateX(360deg) rotateY(360deg);
+    }
+ }
+ 
+ /* User Count Styling */
+ .user-count-container {
+    position: relative;
+    text-align: center;
+    margin-top: 200px;
+    z-index: 1;
+ }
+ 
+ #user-count {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    font-family: "Transformers", sans-serif;
+    animation: glow-text 2s infinite alternate;
+ }
+ 
+ @keyframes glow-text {
+    from {
+       text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    }
+    to {
+       text-shadow: 0 0 40px #00ffcc, 0 0 60px #00ffcc;
+    }
+ }
+ 
+ /* Navigation Button */
+ .navigation-container {
+    text-align: center;
+    margin-top: 30px;
+ }
+ 
+ .home-button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0077ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+ }
+ 
+ .home-button:hover {
+    background-color: #005bbb;
+    transform: scale(1.1);
+ }
+ 
+
+ /* Styling the lines (connections) */
+.connection {
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(90deg, rgba(0, 255, 204, 0) 0%, rgba(0, 255, 204, 1) 50%, rgba(0, 255, 204, 0) 100%);
+    transform-origin: 0 0;
+    animation: line-glow 2s infinite ease-in-out;
+    border-radius: 2px;
+ }
+ 
+ /* Glow animation for lines */
+ @keyframes line-glow {
+    0% {
+       opacity: 0.5;
+    }
+    50% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0.5;
+    }
+ }
+ 

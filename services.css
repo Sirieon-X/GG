@@ -1,0 +1,11 @@
+.services-hero {
+    background: linear-gradient(135deg, #002855, #007BFF);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services-content ul {
+    list-style-type: square;
+    margin-left: 20px;
+}

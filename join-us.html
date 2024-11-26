@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Gwerb Global</title>
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+    <div class="join-form-container">
+        <h1>Join Gwerb Global</h1>
+
+        <img src="icons/th.jpeg" alt="Company Logo" class="comapny-logo">
+        
+        <!-- Join Us Form -->
+        <form class="join-form" action="submit-form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <button type="submit" class="join-button">Join Now</button>
+        </form>
+        
+        <!-- Google Sign-In Button -->
+        <div class="google-signin-container">
+            <button type="button" class="google-button" onclick="continueWithGoogle()">
+                <img src="icons/google-icon.png" alt="Google icon" class="google-icon"> Continue using Google
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function continueWithGoogle() {
+            alert("Redirecting to Google Sign-In...");
+        }
+    </script>
+    
+</body>
+</html>

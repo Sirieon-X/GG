@@ -1,0 +1,98 @@
+/* Reset Body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Arial', sans-serif;
+ }
+ 
+ /* Welcome Container */
+ .welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 10; /* Keeps it above the animation */
+ }
+ 
+ /* Welcome Text Styling */
+ .welcome-text {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #0077ff;
+    animation: pulse 2s infinite; /* Glow animation */
+ }
+ 
+ /* Subtitle Styling */
+ .sub-text {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 3s ease-out 2s forwards; /* Delayed fade-in */
+ }
+ 
+ /* Keyframe for Pulsing Glow */
+ @keyframes pulse {
+    0%, 100% {
+       text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #0077ff;
+    }
+    50% {
+       text-shadow: 0 0 30px #00ffff, 0 0 60px #0077ff, 0 0 90px #0044ff;
+    }
+ }
+ 
+ /* Keyframe for Fade-in Effect */
+ @keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+ }
+ 
+ /* Background Canvas */
+ #background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #00111a, #000000);
+    z-index: 1; /* Behind the text */
+ }
+ 
+ /* Home Button Styling */
+.home-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #0077ff, #00ffff);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(0, 119, 255, 0.5);
+ }
+ 
+ /* Button Hover Animation */
+ .home-button:hover {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 35px rgba(0, 119, 255, 1);
+    transform: scale(1.1); /* Slightly enlarges the button */
+ }
+ 
+ /* Active State for Button */
+ .home-button:active {
+    transform: scale(0.95);
+    background: linear-gradient(90deg, #0033cc, #00aaff);
+ }
+ 
