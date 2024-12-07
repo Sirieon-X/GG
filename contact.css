@@ -37,7 +37,7 @@
 }
 
 .contact-form .btn:hover {
-    background-color: #6D0D74;
+    background-color: #db5be4;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }

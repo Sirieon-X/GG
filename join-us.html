@@ -12,33 +12,21 @@
 
         <img src="icons/th.jpeg" alt="Company Logo" class="comapny-logo">
         
-        <!-- Join Us Form -->
-        <form class="join-form" action="submit-form.php" method="post">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-            <label for="email">Email</label>
+        <form id="joinUsForm">
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Create a password" required>
-
-            <button type="submit" class="join-button">Join Now</button>
-        </form>
-        
-        <!-- Google Sign-In Button -->
-        <div class="google-signin-container">
-            <button type="button" class="google-button" onclick="continueWithGoogle()">
-                <img src="icons/google-icon.png" alt="Google icon" class="google-icon"> Continue using Google
-            </button>
-        </div>
-    </div>
-
-    <script>
-        function continueWithGoogle() {
-            alert("Redirecting to Google Sign-In...");
-        }
-    </script>
-    
+            <button type="submit">Submit</button>
+          </form>
+          
+          <script>
+            document.getElementById("joinUsForm").addEventListener("submit", function(event) {
+              const email = document.getElementById("email").value;
+              const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              
+              if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                event.preventDefault();  // Prevent form submission if invalid
+              }
+            });
+          </script>  
 </body>
 </html>

@@ -1,0 +1,38 @@
+.service-detail {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c1e, #333);
+    color: white;
+  }
+  
+  .service-detail .intro {
+    margin-bottom: 20px;
+  }
+  
+  .service-detail .features {
+    margin: 20px 0;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-detail .cta {
+    margin: 30px 0;
+  }
+  
+  .service-detail .cta .btn {
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-detail .cta .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  

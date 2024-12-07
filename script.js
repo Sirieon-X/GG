@@ -64,3 +64,13 @@ document.getElementById("network-btn").addEventListener("mouseover", () => {
     console.log("Node connection animation triggered!");
 });
 
+// JavaScript for Menu Animation
+document.addEventListener("DOMContentLoaded", () => {
+   const menuButton = document.getElementById("menuButton");
+   const menu = document.getElementById("menu");
+ 
+   menuButton.addEventListener("click", () => {
+     menu.classList.toggle("show");
+   });
+ });
+ 
